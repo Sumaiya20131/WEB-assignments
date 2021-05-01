@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Style with header*/
+.header {
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+}
+/* Style the top navigation bar */
+.topnav {
+    background-color: darkgreen;
+    overflow: hidden;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 15px 18px;
+    font-family: cursive;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: whitesmoke;
+    color: black;
+    font-family: cursive;
+}
+
+/* Create three equal columns that floats next to each other */
+.column{
+    float: left;
+    width: 30%;
+/*    padding: 25px;*/
+    height: 270px;
+/*    margin-top: 50px;*/
+    overflow: inherit;
+    background-color: beige;
+    border: 5px solid black;
+    margin-right: 10px;
+    margin: 50px auto;
+}
+
+.column p {
+    line-height: 20px;
+    padding: 0px 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the title of each box */
+/*
+.title {
+
+    position: relative;
+    left: 250px;
+    bottom: 50px;
+}
+*/
+
+.title {
+    box-sizing: border-box;
+    background-color: greenyellow;
+    border: 5px solid black;
+    position: relative;
+    left: 208px;
+    bottom: 26px;
+    width: 50.33%;
+    padding: 8px;
+    height: 70px;
+    font-size: 23px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+#mutton:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 25px;
+}
+
+/*Responsive layout- Desktop Version*/
+@media (min-width:992px) and (max-width:1347px) {
+    .column {
+        float: left;
+        border: 5px solid black;
+        width: 31%
+    }
+    h1.title{
+        left: 154px;
+    }
+}
+
+/*Responsive layout- Desktop Version*/
+@media (min-width:768px) and (max-width:991px) {
+    #mutton{
+        width: 47%;
+    }
+    #luchi{
+        width: 47%;
+    }
+    #patishapta{
+        width: 97%;
+    }
+    
+    #patishapta h1.title {
+        left: 630px;
+        width: 30.33%;
+        padding: 8px;
+    }
+}
+
+
+/* Responsive layout - Mobile Version */
+@media (max-width:767px) {
+    #mutton{
+        width: 96%;
+    }
+    #luchi{
+        width: 96%;
+    }
+    #patishapta{
+        width: 96%;
+    }
+    h1.title{
+        left: 454px;
+        width: 30.33%;
+    }
+}
